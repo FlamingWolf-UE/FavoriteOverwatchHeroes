@@ -1,0 +1,139 @@
+
+
+
+
+
+* 
+{
+    box-sizing: border-box;
+   font-family: 'Obilique';
+    font-weight: 400;
+}
+
+
+body{
+    overflow:auto;
+}
+
+.hero-card {
+ height:600px;
+ overflow: hidden;
+ transition: .3s;
+}
+
+.hp-bar
+{
+    
+   /* border:2px solid rgb(218, 61, 4); */
+    border-radius: 2px;
+
+    height:30px;
+    transform: skew(-28deg, 0deg);
+    overflow:hidden;
+}
+
+.hp-value
+{
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Obilique';
+    font-style: italic;
+}
+
+.hp-segment
+{
+  /* rgb(208, 208, 208) */
+   
+    background:  rgb(233, 107, 61);
+    line-height: 30px;
+    margin-left:2px;
+}
+.shield-segment
+{
+    background:  rgb(61, 95, 233);
+    line-height: 30px;
+    margin-left:2px;
+}
+
+.hp-segment:first-child
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.white-gradient
+{
+    
+    background: rgb(255,255,255);
+background: linear-gradient(153deg, rgba(255,255,255,0.7917542016806722) 48%, rgba(255,255,255,0) 100%);
+}
+
+.hero-name
+{
+
+    line-height:60px;
+    font-size: 64px;
+    font-weight: 500;
+    font-style: italic;
+    font-family:'Obilique'
+}
+
+.hero-desc
+{   
+    margin-top:80px !important;
+    border-left:2px solid rgb(218, 61, 4);
+    border-radius: 20px;
+    font-size: 24px;
+
+}
+
+
+.statistics-title, .statistics-value
+{
+    font-size: 24px;
+}
+
+.stats-container
+{
+    position:absolute;
+    bottom:0;
+}
+
+
+.front
+{
+    width:100%;
+    transform: perspective(3000px) rotateY(0deg);
+    backface-visibility: hidden;
+    overflow:hidden;
+}
+
+.back
+{
+    width:100%;
+    position:absolute;
+    overflow:hidden;
+    backface-visibility: hidden;
+    transform: perspective(3000px) rotateY(180deg);
+}
+
+
+.card:hover > .front{
+    transform: perspective(3000px) rotateY(-180deg);
+}
+.card:hover > .back{
+    transform: perspective(3000px) rotateY(0deg);
+}
+
+@font-face {
+   
+    font-family: "Obilique"; 
+   
+    src: url("../fonts/bignoodletoooblique.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+
+    } 
+
+    
