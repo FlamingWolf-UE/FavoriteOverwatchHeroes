@@ -18,7 +18,7 @@
     "gold_medals":"110",
     "damage_dealt":"387637",
     "sound_barrier_bufs":"962",
-    "portrait_image_url":"FavoriteOverwatchHeroes/img/lucio-hero.png",
+    "portrait_image_url":"/FavoriteOverwatchHeroes/img/lucio-hero.png",
     "specify_stat_2":{"stat_name":"Наложений дополнительных щитов","stat_value":"698"}
     
 }, 
@@ -40,7 +40,7 @@
     "damage_dealt":"1660801",
     "specify_stat_1":{"stat_name":"Убийств обрезом","stat_value":"204"},
     "specify_stat_2":{"stat_name":"Убийств у Боба","stat_value":"448"},
-    "portrait_image_url":"FavoriteOverwatchHeroes/img/ashe-hero.png"
+    "portrait_image_url":"img/ashe-hero.png"
 },
 {
     "hero_name":"Сомбра",
