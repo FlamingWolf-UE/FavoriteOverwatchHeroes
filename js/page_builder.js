@@ -12,7 +12,7 @@ function readTextFile(file, callback) {
             callback(rawFile.responseText);
         }
     }
-    rawFile.send(null);
+
 }
 
 var hp_segment = '<div class=\"hp-segment col\"> &shy;</div>';
