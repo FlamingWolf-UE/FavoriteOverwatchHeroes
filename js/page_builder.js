@@ -1,4 +1,4 @@
-window.onload = readTextFile("../json/data.json", function(text){
+window.onload = readTextFile("./json/data.json", function(text){
     var data = JSON.parse(text);
     console.log(data);
     buildPage(data);
@@ -24,15 +24,15 @@ function buildPage(data_array)
     {
         if (data_array[i].role == "damage_dealer") 
         {
-            var role_image_url = "/img/dd-icon.png";
+            var role_image_url = "./img/dd-icon.png";
         }
         else if (data_array[i].role == "support") 
         {
-            var role_image_url = "/img/support-icon.png";
+            var role_image_url = "./img/support-icon.png";
         }
         else if (data_array[i].role == "tank") 
         {
-            var role_image_url = "/img/tank-icon.png";
+            var role_image_url = "./img/tank-icon.png";
         }
         console.log(i);
        heroes_list.innerHTML +=`
